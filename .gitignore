@@ -8,17 +8,7 @@ build/
 dist/
 
 # IDE
-.vscode/
 .idea/
-
-# Compiled output
-*.js
-*.js.map
-*.d.ts
-
-# Dependency lock files
-package-lock.json
-yarn.lock
 
 # Environment variables
 .env
