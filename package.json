@@ -12,7 +12,14 @@
   "scripts": {
     "start": "parcel ./index.html",
     "build": "rollup -c --bundleConfigAsCjs",
-    "deploy": "npm version patch && npm publish --access public"
+    "deploy": "npm version patch && npm publish --access public",
+    "lint": "eslint src --ext .ts,.tsx --max-warnings 0",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx}": [
+      "npm run lint --fix"
+    ]
   },
   "keywords": [],
   "author": "Victor Lima",
@@ -31,6 +38,8 @@
     "eslint-plugin-prettier": "^5.1.3",
     "eslint-plugin-react": "^7.34.0",
     "eslint-plugin-react-hooks": "^4.6.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "3.2.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
