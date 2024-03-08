@@ -1,7 +1,7 @@
 {
-  "name": "boilerplate-ui-kit",
-  "version": "1.0.0",
-  "description": "",
+  "name": "@victorlima.dev/boilerplate-ui-kit",
+  "version": "0.0.1",
+  "description": "Basic project structure for reacts component packages",
   "main": "dist/cjs/index.ts",
   "module": "dist/esm/index.ts",
   "files": [
@@ -27,5 +27,13 @@
   },
   "dependencies": {
     "tslib": "^2.6.2"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victorandradelima/boilerplate-ui-kit.git"
+  },
+  "bugs": {
+    "url": "https://github.com/victorandradelima/boilerplate-ui-kit/issues"
+  },
+  "homepage": "https://github.com/victorandradelima/boilerplate-ui-kit#readme"
 }
