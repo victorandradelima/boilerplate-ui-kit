@@ -10,6 +10,7 @@
   "type": "module",
   "types": "dist/index.d.ts",
   "scripts": {
+    "start": "parcel ./index.html",
     "build": "rollup -c --bundleConfigAsCjs"
   },
   "keywords": [],
@@ -20,6 +21,8 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-typescript": "^11.1.6",
     "@types/react": "^18.2.64",
+    "@types/react-dom": "^18.2.21",
+    "@types/react-router-dom": "^5.3.3",
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
     "eslint": "^8.57.0",
@@ -29,6 +32,8 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "prettier": "3.2.5",
     "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.22.3",
     "rollup": "^4.12.1",
     "rollup-plugin-dts": "^6.1.0",
     "tslib": "^2.6.2",
