@@ -1,9 +1,9 @@
-import commonjs from '@rollup/plugin-commonjs';
-import resolve from '@rollup/plugin-node-resolve';
-import typescript from '@rollup/plugin-typescript';
-import dts from 'rollup-plugin-dts';
+import commonjs from '@rollup/plugin-commonjs'
+import resolve from '@rollup/plugin-node-resolve'
+import typescript from '@rollup/plugin-typescript'
+import dts from 'rollup-plugin-dts'
 
-import pkg from './package.json';
+import pkg from './package.json'
 
 export default [
   {
@@ -31,4 +31,4 @@ export default [
     output: [{ file: 'dist/index.d.ts', format: 'esm' }],
     plugins: [dts.default()],
   },
-];
+]

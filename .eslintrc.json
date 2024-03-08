@@ -6,7 +6,8 @@
     "extends": [
         "eslint:recommended",
         "plugin:@typescript-eslint/recommended",
-        "plugin:react/recommended"
+        "plugin:react/recommended",
+        "plugin:prettier/recommended"
     ],
     "settings": {
       "react": {
@@ -21,12 +22,15 @@
     "plugins": [
         "@typescript-eslint",
         "react",
-        "react-hooks"
+        "react-hooks",
+        "prettier"
     ],
     "rules": {
       "react-hooks/rules-of-hooks": "error",
       "react-hooks/exhaustive-deps": "warn",
-      "react/prop-types": "off"
-      // "prettier/prettier": "error",
+      "react/prop-types": "off",
+      "prettier/prettier": "error",
+      "semi": "off",
+      "no-extra-semi": "off"
     }
 }
