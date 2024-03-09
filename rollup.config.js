@@ -12,23 +12,23 @@ export default [
       {
         file: pkg.main,
         format: 'cjs',
-        sourceMap: true,
+        sourceMap: true
       },
       {
         file: pkg.module,
         format: 'esm',
-        sourceMap: true,
-      },
+        sourceMap: true
+      }
     ],
     plugins: [
       resolve(),
       commonjs(),
-      typescript({ tsconfig: './tsconfig.json' }),
-    ],
+      typescript({ tsconfig: './tsconfig.json' })
+    ]
   },
   {
     input: 'dist/esm/types/index.d.ts',
     output: [{ file: 'dist/index.d.ts', format: 'esm' }],
-    plugins: [dts.default()],
-  },
+    plugins: [dts.default()]
+  }
 ]
