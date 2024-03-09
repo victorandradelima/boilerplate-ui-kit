@@ -1,6 +1,6 @@
 {
   "name": "@victorlima.dev/boilerplate-ui-kit",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Basic project structure for reacts component packages",
   "main": "dist/cjs/index.ts",
   "module": "dist/esm/index.ts",
