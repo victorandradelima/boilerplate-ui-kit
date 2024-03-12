@@ -1,3 +1,86 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%; /* #ffffff */ /* Cor base de background do projeto */
+    --foreground: 360, 0%, 10%; /* #1a1a1a */ /* Cor base de fonte do projeto */
+
+    --card: 0 0% 100%; /* #ffffff */ /* Cor base de background dos cards do projeto, similar ao background */
+    --card-foreground: 360, 0%, 10%; /* #1a1a1a */ /* Cor base de fonte dos cards do projeto, similar ao foreground */
+
+    --popover: 0 0% 100%; /* #ffffff */ /* Cor base de background do popovers do projeto */
+    --popover-foreground: 360, 0%, 10%; /* #1a1a1a */ /* Cor base de fontes do popovers do projeto */
+
+    --primary: 207, 100%, 46%; /* #0081eb */ /* Cor primária, usada para destacar elementos principais,
+    como botões, fundos ativos, etc. Branco puro. */
+    --primary-foreground: 92, 100%, 46%; /* #6deb00 */ /*  Cor do texto em elementos primários,
+    um tom escuro com uma saturação e luminosidade moderadas */
+
+    --secondary: 210, 40%, 96%; /* #f1f5f9 */ /* Uma cor secundária mais escura,
+    usada para contrastar com a cor primária */
+    --secondary-foreground: 222.2 47.4% 11.2%; /* #ff5a5f */ /* Cor do texto em elementos secundários,
+    semelhante ao --foreground */
+
+    --muted: 210 40% 96.1%; /* #f2f2f2 */ /* Uma cor mais suave e menos saturada,
+    usada para elementos menos proeminentes */
+    --muted-foreground: 215.4 16.3% 46.9%; /* #8c8c8c */ /*  Cor do texto para elementos suavizados,
+    um tom de cinza mais escuro */
+
+    --accent: 210 40% 96.1%; /* #f2f2f2 */ /* Cor de destaque, para evidenciar elementos
+    dentro das outras cores */
+    --accent-foreground: 222.2 47.4% 11.2%; /* #ff5a5f */ /* Cor do texto em elementos
+    de destaque, semelhante ao --foreground */
+
+    --destructive: 0, 84%, 60%; /* #ef4343 */ /* Cor usada para ações destrutivas,
+    como exclusões ou alertas, um tom de vermelho forte */
+    --destructive-foreground: 210 40% 98%; /* #ffffff */ /* Cor do texto para ações destrutivas,
+    semelhante ao --foreground */
+
+    --border: 214.3 31.8% 91.4%; /* #e5e5e5 */ /* Cor das bordas dos elementos */
+    --input: 214.3 31.8% 91.4%; /* #e5e5e5 */ /* Cor de fundo para campos de entrada */
+    --ring: 222.2 84% 4.9%; /* #0d0d0d */ /* Cor para realçar elementos selecionados, como anéis de foco */
+
+    --radius: 0.5rem; /* 8px */ /* Cor das bordas dos elementos */
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%; /* #0d0d0d */
+    --foreground: 210 40% 98%; /* #ffffff */
+
+    --card: 222.2 84% 4.9%; /* #0d0d0d */
+    --card-foreground: 210 40% 98%; /* #ffffff */
+
+    --popover: 222.2 84% 4.9%; /* #0d0d0d */
+    --popover-foreground: 210 40% 98%; /* #ffffff */
+
+    --primary: 210 40% 98%; /* #ffffff */
+    --primary-foreground: 222.2 47.4% 11.2%; /* #ff5a5f */
+
+    --secondary: 217.2 32.6% 17.5%; /* #2d2d2d */
+    --secondary-foreground: 210 40% 98%; /* #ffffff */
+
+    --muted: 217.2 32.6% 17.5%; /* #2d2d2d */
+    --muted-foreground: 215 20.2% 65.1%; /* #b3b3b3 */
+
+    --accent: 217.2 32.6% 17.5%; /* #2d2d2d */
+    --accent-foreground: 210 40% 98%; /* #ffffff */
+
+    --destructive: 0 62.8% 30.6%; /* #ff5f3e */
+    --destructive-foreground: 210 40% 98%; /* #ffffff */
+
+    --border: 217.2 32.6% 17.5%; /* #2d2d2d */
+    --input: 217.2 32.6% 17.5%; /* #2d2d2d */
+    --ring: 212.7 26.8% 83.9%; /* #4c4c4c */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border; /* #e5e5e5 */
+  }
+  body {
+    @apply bg-background text-foreground; /* #ffffff, #0d0d0d */
+  }
+}
